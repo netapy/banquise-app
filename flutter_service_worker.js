@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "45cb75718121688fb549b9a9f8b4ada6",
+  "assets/AssetManifest.json": "eac096ee15b95c89f5ce185d2bc16cf4",
 "assets/assets/data/playerdt.json": "243b4a2be5cd920b86535c6883e16e74",
 "assets/assets/fonts/Quicksand-Bold.ttf": "0738679df4cf4e566f60343830da7bfa",
 "assets/assets/fonts/Quicksand-SemiBold.ttf": "c82b184bf7450e14adccb7b0d6117474",
@@ -25,6 +25,7 @@ const RESOURCES = {
 "assets/assets/images/anim1/Scan0032.png": "f70795586079956937f7b9776766835e",
 "assets/assets/images/crea_bgMove.png.jpg": "d745d682fa67b1ed300aa1af2569547b",
 "assets/assets/images/giraffe.jpg": "912b1cb8adb377843cda171e1e1293ab",
+"assets/assets/images/hand-up-solid-24.png": "767e2296149cee6a8e6246cc6406d74c",
 "assets/assets/images/login_image.png": "78b6046eaf013c0554016e28ef7912e9",
 "assets/assets/images/panda.jpg": "a0b5436f2a2d739064f0c4094163d15a",
 "assets/assets/images/panda.png": "94ea01abb7c815278131f5901e6efb57",
@@ -35,21 +36,22 @@ const RESOURCES = {
 "assets/assets/jsons/myGameExample.json": "6d47e31abc3455da455aaabd208c632d",
 "assets/FontManifest.json": "de57a752d20567b010b7553e36a86fe9",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "392897280ab9130f0d9a0086373b3d48",
+"assets/NOTICES": "0e6784965931b80a7feb389710180d7c",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/shaders/ink_sparkle.frag": "0a90c33f6761ec211f8f728ec8ffd906",
 "auth.html": "641eb099d07632db2937e4e1546cf161",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "cors.json": "72a0a758a5a9fee3897ea1d62a003055",
 "favicon.png": "08c506220ec3e959f6ab2654dc88c103",
-"flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "icons/Icon-192.png": "d0558b2ee6f70aa65d655b306469597c",
 "icons/Icon-512.png": "13d6eaf9e15a914b152f6afb63eaf717",
-"index.html": "3733bf9b441a13a819300847cd305aea",
-"/": "3733bf9b441a13a819300847cd305aea",
-"main.dart.js": "496a1b14aa66f2f59ab480dddae3cd03",
+"index.html": "10c1307a91af3a144220e7ef5279b9cc",
+"/": "10c1307a91af3a144220e7ef5279b9cc",
+"main.dart.js": "d1299225e12a918366f91c35fddbe86b",
 "manifest.json": "10f3211f9d18c33283830c339fb43627",
 "splash/img/dark-1x.png": "251d7e3b558f84f477b577ecbdc072a5",
 "splash/img/dark-2x.png": "65a349114e3bcbb4a864a746c29b7fff",
@@ -68,7 +70,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -167,9 +168,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
