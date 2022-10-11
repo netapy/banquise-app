@@ -3,8 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "28fbf678f707d2af00545bef1f7aab6a",
+  "assets/AssetManifest.json": "8e448e479638c408216204601c66c25f",
+"assets/assets/animations/loading_animation.json": "f85944baf8ea4ebc888fa8b4cc600d08",
 "assets/assets/data/playerdt.json": "243b4a2be5cd920b86535c6883e16e74",
+"assets/assets/fonts/BanquiseIcons.ttf": "bca6298d3adcef9040dc7e6b9270b4c4",
 "assets/assets/fonts/Quicksand-Bold.ttf": "0738679df4cf4e566f60343830da7bfa",
 "assets/assets/fonts/Quicksand-SemiBold.ttf": "c82b184bf7450e14adccb7b0d6117474",
 "assets/assets/images/add_circle.png": "0978be43c41aea9d1ac2e709b4ee7fa5",
@@ -20,7 +22,7 @@ const RESOURCES = {
 "assets/assets/images/REPLAYFASTBUTTON.png": "74e62a72ebafc2ea0c196aa7a423a7ed",
 "assets/assets/images/STARTBUTTON.png": "09e2ae228db462de31d5886909abf1bb",
 "assets/assets/jsons/myGameExample.json": "6d47e31abc3455da455aaabd208c632d",
-"assets/FontManifest.json": "de57a752d20567b010b7553e36a86fe9",
+"assets/FontManifest.json": "fab50c09aa7c3074fbc2bfd7a4462ce6",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/NOTICES": "831ac150c1d43678393fa4926aa8de69",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
@@ -56,9 +58,9 @@ const RESOURCES = {
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "icons/Icon-192.png": "77dc973da07daf154b55799eca58cdb2",
 "icons/Icon-512.png": "cfc3104246e23cdf459e8ced2affc215",
-"index.html": "da4f05e00aed74f3e50df59591b89a95",
-"/": "da4f05e00aed74f3e50df59591b89a95",
-"main.dart.js": "89f8306a1e6b82e2db49c45716bfe742",
+"index.html": "00edb041d5ea6bf5ece7747c01c19179",
+"/": "00edb041d5ea6bf5ece7747c01c19179",
+"main.dart.js": "ac79c57aa13feeb21e8ad64fdfd916dc",
 "manifest.json": "10f3211f9d18c33283830c339fb43627",
 "privacy.html": "80ca1cc64be406b77599a2bf457bdb85",
 "splash/img/dark-1x.png": "251d7e3b558f84f477b577ecbdc072a5",
