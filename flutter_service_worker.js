@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "395c1dbaf922faa182fddc3784f19a33",
+  "assets/AssetManifest.json": "0950f2d1ab76830714ced54b2bb9572e",
 "assets/assets/animations/home_scroll_horizontal.json": "8fc68b4d95443cde7ed2b19aad914c8a",
 "assets/assets/animations/home_scroll_vertical.json": "a73cc2965fba033eb851ce2e808fd64e",
 "assets/assets/animations/loading_animation.json": "f85944baf8ea4ebc888fa8b4cc600d08",
@@ -16,6 +16,7 @@ const RESOURCES = {
 "assets/assets/images/banquise_logoWht.png": "9e48a3c07eef560bbce06511dd425271",
 "assets/assets/images/black_back.png": "841452a9d76342357a406fc04b2e8fbf",
 "assets/assets/images/crea_bgMove.png.jpg": "d745d682fa67b1ed300aa1af2569547b",
+"assets/assets/images/logo_white_mask_transp.png": "5744aa35c1da8605e8ee1c2269d30c09",
 "assets/assets/jsons/myGameExample.json": "6d47e31abc3455da455aaabd208c632d",
 "assets/FontManifest.json": "7d00b44267f319554bf0dd9ec41c82e2",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
@@ -58,7 +59,7 @@ const RESOURCES = {
 "icons/Icon-maskable-512.png": "a00952fc8973a750155bba558cfd35fc",
 "index.html": "cbff469196f0296474e160026f050160",
 "/": "cbff469196f0296474e160026f050160",
-"main.dart.js": "0864a3e1b8800ffc7754a6c5ebbcda9f",
+"main.dart.js": "a6fcdee49478fc879e95cb6f85eb3bbe",
 "manifest.json": "2ecab60726cdf73e555abed969cf59b3",
 "privacy.html": "80ca1cc64be406b77599a2bf457bdb85",
 "splash/img/dark-1x.png": "72866a838dc78aba69555eeab18b3fd6",
@@ -72,7 +73,7 @@ const RESOURCES = {
 "splash/splash.js": "d6c41ac4d1fdd6c1bbe210f325a84ad4",
 "splash/style.css": "c033e8273d5bc15d0867bb7c935118b6",
 "termsofservice.html": "952ca8cb65543e925d8052accc7a453b",
-"version.json": "178a22739fa2f171af925bde64189371"
+"version.json": "827996c4a6331beba1c57a5884192887"
 };
 
 // The application shell files that are downloaded before a service worker can
