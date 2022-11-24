@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "0950f2d1ab76830714ced54b2bb9572e",
+  "assets/AssetManifest.json": "7a89ba5e2d67a33fc627956cb8ee54cd",
 "assets/assets/animations/home_scroll_horizontal.json": "8fc68b4d95443cde7ed2b19aad914c8a",
 "assets/assets/animations/home_scroll_vertical.json": "a73cc2965fba033eb851ce2e808fd64e",
 "assets/assets/animations/loading_animation.json": "f85944baf8ea4ebc888fa8b4cc600d08",
@@ -16,11 +16,12 @@ const RESOURCES = {
 "assets/assets/images/banquise_logoWht.png": "9e48a3c07eef560bbce06511dd425271",
 "assets/assets/images/black_back.png": "841452a9d76342357a406fc04b2e8fbf",
 "assets/assets/images/crea_bgMove.png.jpg": "d745d682fa67b1ed300aa1af2569547b",
+"assets/assets/images/logo_banquise_transp.png": "bc10d28110c933bb20401be311d32a0a",
 "assets/assets/images/logo_white_mask_transp.png": "5744aa35c1da8605e8ee1c2269d30c09",
 "assets/assets/jsons/myGameExample.json": "6d47e31abc3455da455aaabd208c632d",
 "assets/FontManifest.json": "7d00b44267f319554bf0dd9ec41c82e2",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "3e2431a45ecb02b0f0f524b562dda668",
+"assets/NOTICES": "35c22af669793f915818ead309e5d01b",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/social_login_buttons/lib/assets/2.0x/apple-black-logo.png": "6ab19330b95a2d9ae68575e0660c37cc",
 "assets/packages/social_login_buttons/lib/assets/2.0x/apple-logo.png": "a557fdf0eb6b83da96f7bdb2d01db927",
@@ -59,7 +60,7 @@ const RESOURCES = {
 "icons/Icon-maskable-512.png": "a00952fc8973a750155bba558cfd35fc",
 "index.html": "cbff469196f0296474e160026f050160",
 "/": "cbff469196f0296474e160026f050160",
-"main.dart.js": "fe5207b4b7ce555b9ac62060473c1e81",
+"main.dart.js": "942f4dc06d10e77360a8e18356470660",
 "manifest.json": "2ecab60726cdf73e555abed969cf59b3",
 "privacy.html": "80ca1cc64be406b77599a2bf457bdb85",
 "splash/img/dark-1x.png": "72866a838dc78aba69555eeab18b3fd6",
