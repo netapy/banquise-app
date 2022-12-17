@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "7a89ba5e2d67a33fc627956cb8ee54cd",
+  "assets/AssetManifest.json": "b89dd5c460a816824556a2d61eb1c14c",
 "assets/assets/animations/home_scroll_horizontal.json": "8fc68b4d95443cde7ed2b19aad914c8a",
 "assets/assets/animations/home_scroll_vertical.json": "a73cc2965fba033eb851ce2e808fd64e",
 "assets/assets/animations/loading_animation.json": "f85944baf8ea4ebc888fa8b4cc600d08",
@@ -15,13 +15,14 @@ const RESOURCES = {
 "assets/assets/images/add_circle.png": "0978be43c41aea9d1ac2e709b4ee7fa5",
 "assets/assets/images/banquise_logoWht.png": "9e48a3c07eef560bbce06511dd425271",
 "assets/assets/images/black_back.png": "841452a9d76342357a406fc04b2e8fbf",
+"assets/assets/images/button_pads.png": "42af24b4b07aded4d2a4b792d01fe4f7",
 "assets/assets/images/crea_bgMove.png.jpg": "d745d682fa67b1ed300aa1af2569547b",
 "assets/assets/images/logo_banquise_transp.png": "bc10d28110c933bb20401be311d32a0a",
 "assets/assets/images/logo_white_mask_transp.png": "5744aa35c1da8605e8ee1c2269d30c09",
 "assets/assets/jsons/myGameExample.json": "6d47e31abc3455da455aaabd208c632d",
 "assets/FontManifest.json": "7d00b44267f319554bf0dd9ec41c82e2",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "30df1b89b3e1778d0e1591e80db58629",
+"assets/NOTICES": "ef00620d4d4cc5d3f9b615a8ddb84a95",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/social_login_buttons/lib/assets/2.0x/apple-black-logo.png": "6ab19330b95a2d9ae68575e0660c37cc",
 "assets/packages/social_login_buttons/lib/assets/2.0x/apple-logo.png": "a557fdf0eb6b83da96f7bdb2d01db927",
@@ -51,7 +52,6 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
 "canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "cors.json": "72a0a758a5a9fee3897ea1d62a003055",
-"favicon%20-%20Copie.png": "b82113e3a4be6050416975a68534d5b6",
 "favicon.png": "b82113e3a4be6050416975a68534d5b6",
 "firebase-messaging-sw.js": "d41d8cd98f00b204e9800998ecf8427e",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
@@ -61,7 +61,7 @@ const RESOURCES = {
 "icons/Icon-maskable-512.png": "a00952fc8973a750155bba558cfd35fc",
 "index.html": "cbff469196f0296474e160026f050160",
 "/": "cbff469196f0296474e160026f050160",
-"main.dart.js": "a923427d10a94e8f324d1f9ad9e19fc8",
+"main.dart.js": "7bb743af518ce246208c2e088362c8f8",
 "manifest.json": "c9af6a6b9ea2bc629b36cac1c21c3872",
 "privacy.html": "80ca1cc64be406b77599a2bf457bdb85",
 "splash/img/dark-1x.png": "72866a838dc78aba69555eeab18b3fd6",
@@ -75,7 +75,7 @@ const RESOURCES = {
 "splash/splash.js": "d6c41ac4d1fdd6c1bbe210f325a84ad4",
 "splash/style.css": "c033e8273d5bc15d0867bb7c935118b6",
 "termsofservice.html": "952ca8cb65543e925d8052accc7a453b",
-"version.json": "d917b4fe94f68c0fcad74951c3b7389e"
+"version.json": "3c0c28c514e175f43b7edbebcf1637e1"
 };
 
 // The application shell files that are downloaded before a service worker can
