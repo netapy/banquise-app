@@ -22,7 +22,7 @@ const RESOURCES = {
 "assets/assets/jsons/myGameExample.json": "6d47e31abc3455da455aaabd208c632d",
 "assets/FontManifest.json": "7d00b44267f319554bf0dd9ec41c82e2",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "9404356efbe9bb9a88989d9ac834545c",
+"assets/NOTICES": "e9e9fdd5b99ecbd84c2f316b58086a3b",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/social_login_buttons/lib/assets/2.0x/apple-black-logo.png": "6ab19330b95a2d9ae68575e0660c37cc",
 "assets/packages/social_login_buttons/lib/assets/2.0x/apple-logo.png": "a557fdf0eb6b83da96f7bdb2d01db927",
@@ -61,7 +61,7 @@ const RESOURCES = {
 "icons/Icon-maskable-512.png": "a00952fc8973a750155bba558cfd35fc",
 "index.html": "81b90f1f706e2d9a42a5f4750f8fd644",
 "/": "81b90f1f706e2d9a42a5f4750f8fd644",
-"main.dart.js": "cc699da00c96d281884a20bab5869f37",
+"main.dart.js": "20440d178e2622c4bace00b802f98ff0",
 "manifest.json": "c9af6a6b9ea2bc629b36cac1c21c3872",
 "privacy.html": "80ca1cc64be406b77599a2bf457bdb85",
 "splash/img/dark-1x.png": "027fa97647256427344c948aa6944581",
@@ -75,7 +75,7 @@ const RESOURCES = {
 "splash/splash.js": "123c400b58bea74c1305ca3ac966748d",
 "splash/style.css": "01e02b5e1130141376c82fd872e2e0ee",
 "termsofservice.html": "952ca8cb65543e925d8052accc7a453b",
-"version.json": "4c2879f2833b33a890dd0afddf4dcb1e"
+"version.json": "7334714d31adb8cbfd5d722912b35b4e"
 };
 
 // The application shell files that are downloaded before a service worker can
