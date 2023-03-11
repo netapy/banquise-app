@@ -8,8 +8,8 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
 "canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
 "flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
-"main.dart.js": "84af411c01b772da520920b40b9e9f2a",
-"version.json": "dfc234236e52184f14f408478541463f",
+"main.dart.js": "a4793e7be73e138d81d6bd577e1403ca",
+"version.json": "19714ed3f8bdc25f318e5d9ecf6d6ed6",
 "assets/assets/images/add_circle.png": "0978be43c41aea9d1ac2e709b4ee7fa5",
 "assets/assets/images/banquise_logoWht.png": "9e48a3c07eef560bbce06511dd425271",
 "assets/assets/images/black_back.png": "841452a9d76342357a406fc04b2e8fbf",
@@ -74,7 +74,10 @@ const RESOURCES = {
 "splash/style.css": "01e02b5e1130141376c82fd872e2e0ee",
 "termsofservice.html": "5015b4827ef10eed54d6d74921ac10e9",
 "index.html": "a0c9c369cfd56e3aaff5bcdd7f53c4dc",
-"/": "a0c9c369cfd56e3aaff5bcdd7f53c4dc"
+"/": "a0c9c369cfd56e3aaff5bcdd7f53c4dc",
+".well-known/assetlinks.json": "cf61715db40bd9a4cb6d304e30fde110",
+"CNAME": "eb04aee5613e9748c7344bf9a3b30ed8",
+"_config.yml": "dc8fe32f8ea298553d3e80fa2759af45"
 };
 
 // The application shell files that are downloaded before a service worker can
