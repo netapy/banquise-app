@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bqz.banquise",
+      "sha256_cert_fingerprints": [
+        "A2:C2:72:25:41:43:C4:1B:3D:F6:2D:88:E1:28:67:D9:18:7F:7D:10:8E:45:34:A7:6C:D0:76:1A:73:1B:1C:59"
+      ]
+    }
+  }
+]
