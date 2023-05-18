@@ -2,89 +2,97 @@
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
-const RESOURCES = {
-  "canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
-"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
-"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
-"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
-"main.dart.js": "c2455d694dd45f6d6bd1ac40656e01c7",
-"version.json": "85751c8d6ec9bd0d67d4689624567150",
-"assets/assets/images/banquise_logoWht.png": "9e48a3c07eef560bbce06511dd425271",
-"assets/assets/images/black_back.png": "841452a9d76342357a406fc04b2e8fbf",
-"assets/assets/images/crea_bgMove.png.jpg": "d745d682fa67b1ed300aa1af2569547b",
-"assets/assets/images/logo_white_mask_transp.png": "5744aa35c1da8605e8ee1c2269d30c09",
-"assets/assets/images/bqz-logo-full.png": "24123ec9d7759b0faee2d0f23cbcc3ec",
-"assets/assets/data/playerdt.json": "d861fb4c238ade074d8f75031062be28",
-"assets/assets/jsons/myGameExample.json": "9bfd1407ee0fb227e1c07805cd09b794",
-"assets/assets/animations/home_scroll_horizontal.json": "8fc68b4d95443cde7ed2b19aad914c8a",
-"assets/assets/animations/home_scroll_vertical.json": "a73cc2965fba033eb851ce2e808fd64e",
-"assets/assets/animations/loading_animation.json": "f85944baf8ea4ebc888fa8b4cc600d08",
-"assets/assets/fonts/Quicksand-Bold.ttf": "0738679df4cf4e566f60343830da7bfa",
-"assets/assets/fonts/Quicksand-SemiBold.ttf": "c82b184bf7450e14adccb7b0d6117474",
-"assets/assets/fonts/Quicksand-Medium.ttf": "865b25e449878b6b4d1f9e098ff2f510",
-"assets/assets/fonts/BanquiseIcons.ttf": "260f12b763238a92f4c5acbb609850ce",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/social_login_buttons/lib/assets/google-logo.png": "28b51fa69f1f0cb8a8f7a4bdd8e173c9",
-"assets/packages/social_login_buttons/lib/assets/3.0x/google-logo.png": "a6b32c1f07fa2fc81ce254986b971691",
-"assets/packages/social_login_buttons/lib/assets/3.0x/facebook-logo.png": "d23205c8421608e83f9f7c420f3e2e89",
-"assets/packages/social_login_buttons/lib/assets/3.0x/apple-logo.png": "f3482792f84398f4879483d8d3159d54",
-"assets/packages/social_login_buttons/lib/assets/3.0x/apple-black-logo.png": "fd557bc349d7b0ac2dc09bdf89903362",
-"assets/packages/social_login_buttons/lib/assets/3.0x/github-logo.png": "93f12731517d2d6ad022935490d84e88",
-"assets/packages/social_login_buttons/lib/assets/3.0x/microsoft-logo.png": "d00462accd7b9bc230de54830c4b47a1",
-"assets/packages/social_login_buttons/lib/assets/3.0x/twitter-logo.png": "27294190740a30f2b76ee5257f39ad74",
-"assets/packages/social_login_buttons/lib/assets/2.0x/google-logo.png": "28b51fa69f1f0cb8a8f7a4bdd8e173c9",
-"assets/packages/social_login_buttons/lib/assets/2.0x/facebook-logo.png": "804cf2a905b2c7460adcaadb3dbfe9ae",
-"assets/packages/social_login_buttons/lib/assets/2.0x/apple-logo.png": "a557fdf0eb6b83da96f7bdb2d01db927",
-"assets/packages/social_login_buttons/lib/assets/2.0x/apple-black-logo.png": "6ab19330b95a2d9ae68575e0660c37cc",
-"assets/packages/social_login_buttons/lib/assets/2.0x/github-logo.png": "168dbc57b649e1f24efd59ee3a65b123",
-"assets/packages/social_login_buttons/lib/assets/2.0x/microsoft-logo.png": "506d81b95bc13a238aad774db3626064",
-"assets/packages/social_login_buttons/lib/assets/2.0x/twitter-logo.png": "0b7b56a1b553e327d8a9d8da3d55eb72",
-"assets/packages/social_login_buttons/lib/assets/facebook-logo.png": "804cf2a905b2c7460adcaadb3dbfe9ae",
-"assets/packages/social_login_buttons/lib/assets/apple-logo.png": "a557fdf0eb6b83da96f7bdb2d01db927",
-"assets/packages/social_login_buttons/lib/assets/apple-black-logo.png": "6ab19330b95a2d9ae68575e0660c37cc",
-"assets/packages/social_login_buttons/lib/assets/github-logo.png": "168dbc57b649e1f24efd59ee3a65b123",
-"assets/packages/social_login_buttons/lib/assets/microsoft-logo.png": "506d81b95bc13a238aad774db3626064",
-"assets/packages/social_login_buttons/lib/assets/twitter-logo.png": "0b7b56a1b553e327d8a9d8da3d55eb72",
-"assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
-"assets/AssetManifest.json": "cc787713a6dfd3c0ddb5d92dc70c9ee7",
-"assets/FontManifest.json": "7d00b44267f319554bf0dd9ec41c82e2",
-"assets/NOTICES": "2cbc4590810cd8107967ab643d5b3114",
-".well-known/assetlinks.json": "cf61715db40bd9a4cb6d304e30fde110",
-"CNAME": "eb04aee5613e9748c7344bf9a3b30ed8",
-"_config.yml": "dc8fe32f8ea298553d3e80fa2759af45",
-"auth.html": "3e468e13518e03d7412aefcda6c0dcf0",
-"cors.json": "434eb804728f2a72969effd13fc48333",
-"favicon.png": "b82113e3a4be6050416975a68534d5b6",
-"firebase-messaging-sw.js": "d41d8cd98f00b204e9800998ecf8427e",
-"icons/Icon-192.png": "398c16524a636abeb97ebc98bee6455e",
-"icons/Icon-512.png": "a00952fc8973a750155bba558cfd35fc",
-"icons/Icon-maskable-192.png": "398c16524a636abeb97ebc98bee6455e",
-"icons/Icon-maskable-512.png": "a00952fc8973a750155bba558cfd35fc",
-"index.html": "a0c9c369cfd56e3aaff5bcdd7f53c4dc",
-"/": "a0c9c369cfd56e3aaff5bcdd7f53c4dc",
-"manifest.json": "80c2027b9995e96173e28f9d73ddd8d1",
-"privacy.html": "e6f35885186231061435216bdc782dd7",
-"splash/img/dark-1x.png": "027fa97647256427344c948aa6944581",
-"splash/img/dark-2x.png": "717c4eb749b31e606693898caf1821f7",
-"splash/img/dark-3x.png": "9a7e3b6815c70e0279e38c0c34df9130",
-"splash/img/dark-4x.png": "3ba3f28a5a0d8f54e43912d106ec08f4",
-"splash/img/light-1x.png": "72178d45559784c0e50a46e77692784b",
+
+const RESOURCES = {"version.json": "85751c8d6ec9bd0d67d4689624567150",
 "splash/img/light-2x.png": "864c4aab72cc1caf0d1957b2a06a3444",
+"splash/img/dark-4x.png": "3ba3f28a5a0d8f54e43912d106ec08f4",
 "splash/img/light-3x.png": "c0de0e3bcb5fd78051874a333bed7d85",
+"splash/img/dark-3x.png": "9a7e3b6815c70e0279e38c0c34df9130",
 "splash/img/light-4x.png": "e30aa3be165af9e188398fd49a3b9b09",
+"splash/img/dark-2x.png": "717c4eb749b31e606693898caf1821f7",
+"splash/img/dark-1x.png": "027fa97647256427344c948aa6944581",
+"splash/img/light-1x.png": "72178d45559784c0e50a46e77692784b",
 "splash/splash.js": "123c400b58bea74c1305ca3ac966748d",
 "splash/style.css": "01e02b5e1130141376c82fd872e2e0ee",
-"termsofservice.html": "5015b4827ef10eed54d6d74921ac10e9"
-};
-
+"index.html": "a0c9c369cfd56e3aaff5bcdd7f53c4dc",
+"/": "a0c9c369cfd56e3aaff5bcdd7f53c4dc",
+"auth.html": "3e468e13518e03d7412aefcda6c0dcf0",
+"CNAME": "eb04aee5613e9748c7344bf9a3b30ed8",
+"firebase-messaging-sw.js": "d41d8cd98f00b204e9800998ecf8427e",
+"main.dart.js": "5d90f39685c67454793932d880de7000",
+".well-known/assetlinks.json": "cf61715db40bd9a4cb6d304e30fde110",
+"flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
+"cors.json": "434eb804728f2a72969effd13fc48333",
+"favicon.png": "b82113e3a4be6050416975a68534d5b6",
+"_config.yml": "dc8fe32f8ea298553d3e80fa2759af45",
+"icons/Icon-192.png": "398c16524a636abeb97ebc98bee6455e",
+"icons/Icon-maskable-192.png": "398c16524a636abeb97ebc98bee6455e",
+"icons/Icon-maskable-512.png": "a00952fc8973a750155bba558cfd35fc",
+"icons/Icon-512.png": "a00952fc8973a750155bba558cfd35fc",
+"manifest.json": "80c2027b9995e96173e28f9d73ddd8d1",
+"termsofservice.html": "5015b4827ef10eed54d6d74921ac10e9",
+"assets/AssetManifest.json": "2c88af3a82c3a5787336661ce8721e56",
+"assets/NOTICES": "160c7ddc613a472400cb02331c989909",
+"assets/FontManifest.json": "7d00b44267f319554bf0dd9ec41c82e2",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "57d849d738900cfd590e9adc7e208250",
+"assets/packages/social_login_buttons/lib/assets/google-logo.png": "28b51fa69f1f0cb8a8f7a4bdd8e173c9",
+"assets/packages/social_login_buttons/lib/assets/2.0x/google-logo.png": "28b51fa69f1f0cb8a8f7a4bdd8e173c9",
+"assets/packages/social_login_buttons/lib/assets/2.0x/microsoft-logo.png": "506d81b95bc13a238aad774db3626064",
+"assets/packages/social_login_buttons/lib/assets/2.0x/facebook-logo.png": "804cf2a905b2c7460adcaadb3dbfe9ae",
+"assets/packages/social_login_buttons/lib/assets/2.0x/apple-black-logo.png": "6ab19330b95a2d9ae68575e0660c37cc",
+"assets/packages/social_login_buttons/lib/assets/2.0x/apple-logo.png": "a557fdf0eb6b83da96f7bdb2d01db927",
+"assets/packages/social_login_buttons/lib/assets/2.0x/twitter-logo.png": "0b7b56a1b553e327d8a9d8da3d55eb72",
+"assets/packages/social_login_buttons/lib/assets/2.0x/github-logo.png": "168dbc57b649e1f24efd59ee3a65b123",
+"assets/packages/social_login_buttons/lib/assets/3.0x/google-logo.png": "a6b32c1f07fa2fc81ce254986b971691",
+"assets/packages/social_login_buttons/lib/assets/3.0x/microsoft-logo.png": "d00462accd7b9bc230de54830c4b47a1",
+"assets/packages/social_login_buttons/lib/assets/3.0x/facebook-logo.png": "d23205c8421608e83f9f7c420f3e2e89",
+"assets/packages/social_login_buttons/lib/assets/3.0x/apple-black-logo.png": "fd557bc349d7b0ac2dc09bdf89903362",
+"assets/packages/social_login_buttons/lib/assets/3.0x/apple-logo.png": "f3482792f84398f4879483d8d3159d54",
+"assets/packages/social_login_buttons/lib/assets/3.0x/twitter-logo.png": "27294190740a30f2b76ee5257f39ad74",
+"assets/packages/social_login_buttons/lib/assets/3.0x/github-logo.png": "93f12731517d2d6ad022935490d84e88",
+"assets/packages/social_login_buttons/lib/assets/microsoft-logo.png": "506d81b95bc13a238aad774db3626064",
+"assets/packages/social_login_buttons/lib/assets/facebook-logo.png": "804cf2a905b2c7460adcaadb3dbfe9ae",
+"assets/packages/social_login_buttons/lib/assets/apple-black-logo.png": "6ab19330b95a2d9ae68575e0660c37cc",
+"assets/packages/social_login_buttons/lib/assets/apple-logo.png": "a557fdf0eb6b83da96f7bdb2d01db927",
+"assets/packages/social_login_buttons/lib/assets/twitter-logo.png": "0b7b56a1b553e327d8a9d8da3d55eb72",
+"assets/packages/social_login_buttons/lib/assets/github-logo.png": "168dbc57b649e1f24efd59ee3a65b123",
+"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+"assets/AssetManifest.smcbin": "56f5812cb19641520651a5d31253eb7e",
+"assets/fonts/MaterialIcons-Regular.otf": "cd5d31c65f3c5d3bf49da1a8f12c74f7",
+"assets/assets/jsons/myGameExample.json": "9bfd1407ee0fb227e1c07805cd09b794",
+"assets/assets/images/crea_bgMove.png.jpg": "d745d682fa67b1ed300aa1af2569547b",
+"assets/assets/images/banquise_logoWht.png": "9e48a3c07eef560bbce06511dd425271",
+"assets/assets/images/logo_white_mask_transp.png": "5744aa35c1da8605e8ee1c2269d30c09",
+"assets/assets/images/bqz-logo-full.png": "24123ec9d7759b0faee2d0f23cbcc3ec",
+"assets/assets/images/black_back.png": "841452a9d76342357a406fc04b2e8fbf",
+"assets/assets/fonts/Quicksand-Bold.ttf": "0738679df4cf4e566f60343830da7bfa",
+"assets/assets/fonts/BanquiseIcons.ttf": "a1ae4a27ea6f2e16a18e179f74e7cf1e",
+"assets/assets/fonts/Quicksand-Medium.ttf": "865b25e449878b6b4d1f9e098ff2f510",
+"assets/assets/fonts/Quicksand-SemiBold.ttf": "c82b184bf7450e14adccb7b0d6117474",
+"assets/assets/data/playerdt.json": "d861fb4c238ade074d8f75031062be28",
+"assets/assets/animations/home_scroll_horizontal.json": "8fc68b4d95443cde7ed2b19aad914c8a",
+"assets/assets/animations/liquidload.riv": "bdefa550c69a77cf222cb666d0b44e1b",
+"assets/assets/animations/explosion_bg.riv": "7a29e1252947dd8629517336b126e69d",
+"assets/assets/animations/new_file.riv": "1eb6b2a44e45e9bee6c249daa2c83c60",
+"assets/assets/animations/banquiseloadtest1z.riv": "8a6102be7c78d5832f002792542ee03b",
+"assets/assets/animations/simplecutload.riv": "41da914a4d62b6901c07fffaf4aa7905",
+"assets/assets/animations/home_scroll_vertical.json": "a73cc2965fba033eb851ce2e808fd64e",
+"assets/assets/animations/loading_animation.json": "f85944baf8ea4ebc888fa8b4cc600d08",
+"privacy.html": "e6f35885186231061435216bdc782dd7",
+"canvaskit/skwasm.js": "1df4d741f441fa1a4d10530ced463ef8",
+"canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
+"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b5652e05",
+"canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
+"canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
+"canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
+"canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "main.dart.js",
+const CORE = ["main.dart.js",
 "index.html",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -95,7 +103,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
@@ -117,6 +124,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -142,6 +151,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
@@ -152,7 +163,6 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
-
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
@@ -192,7 +202,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
@@ -205,7 +214,6 @@ self.addEventListener('message', (event) => {
     return;
   }
 });
-
 // Download offline will check the RESOURCES for all files not in the cache
 // and populate them.
 async function downloadOffline() {
@@ -226,7 +234,6 @@ async function downloadOffline() {
   }
   return contentCache.addAll(resources);
 }
-
 // Attempt to download the resource online before falling back to
 // the offline cache.
 function onlineFirst(event) {
