@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"version.json": "b40e8113038ca07484ecc012b287356c",
+const RESOURCES = {"version.json": "a4ac42bdadfde8b9823c60ce675163e6",
 "splash/img/light-2x.png": "02d54a54a5fbb52ac4c22455afe23e8a",
 "splash/img/dark-4x.png": "3ba3f28a5a0d8f54e43912d106ec08f4",
 "splash/img/light-3x.png": "59cf82161e65df40c215041bd3f59515",
@@ -17,7 +17,7 @@ const RESOURCES = {"version.json": "b40e8113038ca07484ecc012b287356c",
 "auth.html": "3e468e13518e03d7412aefcda6c0dcf0",
 "CNAME": "eb04aee5613e9748c7344bf9a3b30ed8",
 "firebase-messaging-sw.js": "d41d8cd98f00b204e9800998ecf8427e",
-"main.dart.js": "81fb2424f0bcd54c80184930dfbf4052",
+"main.dart.js": "53379e872ebd6ddb83df9d0a726a2b9f",
 ".well-known/assetlinks.json": "cf61715db40bd9a4cb6d304e30fde110",
 "flutter.js": "7d69e653079438abfbb24b82a655b0a4",
 "cors.json": "434eb804728f2a72969effd13fc48333",
